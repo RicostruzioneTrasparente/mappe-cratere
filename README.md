@@ -10,8 +10,8 @@ I requirementes sono `jq` e `csvkit`.
 
 Questo il comando che:
 
-- estrae la colonna 7 dal file `comuni_cratere.csv`;
-- rimuove l'intestazione;
+- estrae soltanto la colonna 7 dal file `comuni_cratere.csv`;
+- da questo output rimuove l'intestazione;
 - fa una chiamata curl a wikidata, passando il codice ISTAT, e via xargs fa una chiamata per ogni riga del file di input;
 - viene estratto il sitelink con jq dall'output in JSON
 
